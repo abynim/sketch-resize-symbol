@@ -1,0 +1,9 @@
+var onRun = function(context) {
+	var selection = context.selection,
+	    loop = selection.objectEnumerator(), layer;
+	while(layer = loop.nextObject()) {
+	    if(layer.class() === MSSymbolInstance) {
+	        layer.resetSizeToMaster()
+	    }
+	}
+}

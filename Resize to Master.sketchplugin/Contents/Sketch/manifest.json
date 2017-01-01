@@ -1,0 +1,29 @@
+{
+  "author" : "Aby Nimbalkar",
+  "commands" : [
+    {
+      "script" : "script.cocoascript",
+      "name" : "Set Symbol to Original Size",
+	    "shortcut" : "cmd shift 1",
+      "icon" : "scale24.tiff",
+      "description" : "Resize selected Symbol instances to their original size",
+      "handlers" : {
+        "run" : "onRun"
+      },
+      "identifier" : "resizeToMaster"
+    }
+  ],
+  "menu" : {
+	"isRoot" : true,
+    "items" : [
+      "resizeToMaster"
+    ],
+    "title" : "Set Symbol to Original Size"
+  },
+  "identifier" : "com.abynim.sketchplugins.resizetomaster",
+  "version" : "1.0",
+  "description" : "Add a shortcut for resizing Symbol instances to their original size.",
+  "authorEmail" : "abynimbalkar@gmail.com",
+  "name" : "Resize to Master",
+  "disableCocoaScriptPreprocessor" : true
+}
